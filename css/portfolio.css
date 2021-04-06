@@ -1,0 +1,236 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+header {
+    width: 15%;
+    float: left;
+    height: 100%;
+    background-color: cadetblue;
+    position: fixed;
+    z-index: 2;
+}
+section {
+    float: right;
+    width: 80%;
+    padding: 20px;
+}
+#nav {
+    list-style: none;
+    margin-left: 10px;
+    font-size: 16pt;
+}
+
+#nav li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#nav a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 20rem;
+}
+#nav a:hover{
+    background-color: darkgray;
+    color: black;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 40px;
+    color: white;
+   
+}
+#devCodeCamp_link {
+    text-decoration: none;
+}
+#devCodeCamp_link  a:hover {
+    color: darkblue;
+}
+p {
+    font-size: 16pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+#projects_links li {
+    padding-bottom: 10px;
+}
+#projects_links li a {
+    text-decoration: none;
+    font-size: 16pt;
+}
+#projects_links li a:hover{
+    color: darkblue;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  .projectImages {
+    display: block;
+    width: 100%;
+    height: 280px;
+  }
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
+.container {
+    position: relative;
+    width: 30%;
+    display: inline-block;
+  }
+  .imageLinks {
+    width: 100%;
+  }
+  .individualProject_links {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    font-size: 24pt;
+}
+#myImage {
+    width: 25%;
+    margin-left: 20px;
+}
+#aboutMeText {
+    float: left;
+    width: 70%;
+}
+#aboutMeContent {
+    display: inline;
+}
+#contactMeButton {
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 100px;
+    border-radius: 10rem;
+    background-color: #008CBA;
+    font-size: 16pt;
+    letter-spacing: 2px;
+    color: white;
+}
+#contactMeButton:hover{
+    background-color: aqua;
+    color: black;
+}
+#topLink{
+    margin-left: 525px;
+}
+@media screen and (max-width: 1024px){
+    header {
+        width: 20%;
+    }
+    section {
+        width: 70%;
+    }
+    #nav {
+        padding-left: 0;
+    }
+    .container {
+        width: 45%;
+    }
+    #topLink{
+        margin-left: 300px;
+    }
+}
+@media screen and (max-width: 800px) {
+    h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+    header {
+        width: 100%;
+        height: 15%;
+    }
+    #nav li{
+        display: inline;
+    }
+    section{
+        width: 100%;
+        margin-left: 20px;
+        padding: 0px;
+        margin-top: 20%;
+    }
+    #nav {
+        margin-left: 75px;
+    }
+    #nav li {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 25px;
+    }
+    img {
+        width: 75%;
+    }
+    .container{
+       margin: 20px;
+       width: 40%;
+    }
+}
+@media screen and (max-width: 425px){
+    #nav {
+        margin-left: 0;
+        margin-top: 0;
+        text-align: center;
+
+    }
+    #nav li{
+        padding-right: 0px;
+        display: block;
+    }
+    header{
+        height: 25%;
+        position: absolute;
+    }
+    h1 {
+        margin-bottom: 0;
+    }
+    #nav a:visited {
+        background-color: darkgray;
+        color: black;
+    }
+    #top {
+        margin-top: 70%;
+    }
+    .container{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 20px;
+     }
+     .projectImages{
+         height: 230px; 
+     }
+     #aboutMeText {
+         float: none;
+         width: 100%;
+     }
+     #myImage {
+         width: 50%;
+         margin-left: 100px;
+     }
+     #topLink{
+        margin-left: 175px;
+    }
+}

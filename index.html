@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <title>My Portfolio</title>
+</head>
+<body onload="takeAway()">
+        <header>
+            <h1>David Paredes</h1>
+            <ul id="nav">
+                <li><a href="#myPortfolio">Home</a></li>
+                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <section id="top">
+            <h2 id="myPortfolio">My Portfolio</h2>
+            <p>This is where I keep my software developer experience and projects as an online portfolio. On this page you can read about me, view my projects, and even send me an email. Soon there will even be links to my linkedIn page and other projects I have completed through my coding bootcamp I am attending. </p>
+        </section>   
+        <section>
+            <h2 id="aboutMe">About Me</h2>
+            <div id="aboutMeContent">
+            <img id="myImage" src="images/contact_profile.jpg" alt="Image of David Paredes">
+            <p id="aboutMeText">Hi, I am David Paredes an aspiring computer programmer currently in a coding bootcamp program. I have done a class years ago in high school with HTML & CSS. Beyond that I am self-taught to keep up with the trends. I have a plan to complete a course at <a id="devCodeCamp_link" href="https://www.devcodecamp.com" target="_blank">devCodeCamp</a> to become a software developer. I hope to use this completion of this course to land a great job and while I am searching for a job I will be freelancing in the meantime.</p>
+            </div>
+        </section>
+        <section>    
+            <h2 id="projects">My Projects</h2>
+            <div class="imageLinks">
+                <div class="container">
+                  <img src="images/DayTripGenerator.jpg" alt="Map with toy biplane." class="projectImages"/>
+                  <div class="overlay" id="removeOverlay">
+                      <a href="https://github.com/DaveyCrockett/DaytripGenerator_proj" class="individualProject_links" target="_blank">Day Trip Generator (JavaScript)</a>
+                  </div>
+                </div>
+
+                    <div class="container">
+                      <img src="images/NewProjectHere.jpg" alt="construction site" class="projectImages"/>
+                      <div class="overlay" id="removeOverlay1">
+                          <a href="#" class="individualProject_links">New Project Here</a>
+                      </div>
+                    </div>
+
+  
+                        <div class="container">
+                          <img src="images/NewProjectHere.jpg" alt="construction site" class="projectImages"/>
+                          <div class="overlay" id="removeOverlay2">
+                              <a href="#" class="individualProject_links">New Project Here</a>
+                          </div>
+                        </div>
+
+                            <div class="container">
+                              <img src="images/NewProjectHere.jpg" alt="construction site" class="projectImages"/>
+                              <div class="overlay" id="removeOverlay3">
+                                  <a href="#" class="individualProject_links">New Project Here</a>
+                              </div>
+                            </div>
+
+                            <div class="container">
+                                <img src="images/NewProjectHere.jpg" alt="construction site" class="projectImages"/>
+                                <div class="overlay" id="removeOverlay4">
+                                    <a href="#" class="individualProject_links">New Project Here</a>
+                                </div>
+                              </div>
+
+                              <div class="container">
+                                <img src="images/NewProjectHere.jpg" alt="construction site" class="projectImages"/>
+                                <div class="overlay" id="removeOverlay5">
+                                    <a href="#" class="individualProject_links">New Project Here</a>
+                                </div>
+                              </div>
+                </div>
+            
+        </section>    
+        <section>
+            <h2 id="contact">Contact Me</h2>
+            <p>Feel free send me an email about possible jobs or even just to say hello by clicking below: <br> 
+                <button id="contactMeButton" type="button" onclick="document.location='mailto:davidparedes@daveswebpublishing.com'">Contact Me</button></p>
+            <a href="#top" id="topLink">Back to Top</a>
+        </section>
+    
+</body>
+</html>
+<script>
+    function takeAway() {
+  let element = document.getElementById("removeOverlay");
+  let element1 = document.getElementById("removeOverlay1");
+  let element2 = document.getElementById("removeOverlay2");
+  let element3 = document.getElementById("removeOverlay3");
+  let element4 = document.getElementById("removeOverlay4");
+  let element5 = document.getElementById("removeOverlay5");
+  
+  if (screen.width <= 1024) {
+    element.classList.remove("overlay");
+    element1.classList.remove("overlay");
+    element2.classList.remove("overlay");
+    element3.classList.remove("overlay");
+    element4.classList.remove("overlay");
+    element5.classList.remove("overlay");
+  }
+}
+</script>
