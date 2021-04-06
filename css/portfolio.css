@@ -159,6 +159,14 @@ h2 {
     #topLink{
         margin-left: 300px;
     }
+    .individualProject_links{
+        color:blueviolet;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+    .individualProject_links:visited{
+        color: brown;
+    }
 }
 @media screen and (max-width: 800px) {
     h1 {
