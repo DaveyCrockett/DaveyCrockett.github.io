@@ -54,6 +54,7 @@ h1 {
 p {
     font-size: 16pt;
     font-family: sans-serif;
+    line-height: 2;
 }
 #projects_links li {
     padding-bottom: 10px;
