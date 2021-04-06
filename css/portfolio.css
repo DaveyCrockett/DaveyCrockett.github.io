@@ -40,8 +40,9 @@ section {
 
 h1 {
     text-align: left;
-    margin-left: 40px;
+    margin-left: 20px;
     color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    
 }
 #devCodeCamp_link {
@@ -52,7 +53,7 @@ h1 {
 }
 p {
     font-size: 16pt;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: sans-serif;
 }
 #projects_links li {
     padding-bottom: 10px;
@@ -136,6 +137,10 @@ p {
 }
 #topLink{
     margin-left: 525px;
+}
+h2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24pt;
 }
 @media screen and (max-width: 1024px){
     header {
