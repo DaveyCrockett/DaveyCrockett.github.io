@@ -79,8 +79,22 @@
         <section>
             <h2 id="contact">Contact Me</h2>
             <p>Feel free send me an email about possible jobs or even just to say hello by clicking below: <br> 
-                <button id="contactMeButton" type="button" onclick="document.location='mailto:davidparedes@daveswebpublishing.com'">Contact Me</button></p>
+                <button id="contactMeButton" type="button" class="open-button" onclick="openForm()">Contact Me</button></p>
             <a href="#top" id="topLink">Back to Top</a>
+            <div class="form-popup" id="myForm">
+                <form action="mailto:davidparedes.daveswebpublishing.com" class="form-container" method="post" enctype="text/plain">
+                  <h1>Contact Me</h1>
+              
+                  <label for="email"><b>Email</b></label>
+                  <input type="text" placeholder="Enter Email" name="email" required>
+              
+                  <label for="message"><b>Message</b></label>
+                  <input type="text" placeholder="Enter a Message" name="message" required>
+              
+                  <button type="submit" class="btn" value="send">Send</button>
+                  <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+              </div>
         </section>
     
 </body>
@@ -102,5 +116,12 @@
     element4.classList.remove("overlay");
     element5.classList.remove("overlay");
   }
+}
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
 }
 </script>
